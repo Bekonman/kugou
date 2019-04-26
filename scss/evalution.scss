@@ -1,0 +1,143 @@
+@import "./partials/_variral";
+
+
+@for $i from 1 through 4 {
+    .sign-#{$i}{
+        display: inline-block;
+        position: absolute;
+        @include font(29.17px,"Simsun" ,#2f3400 );
+        text-align: center;
+        line-height: 56px;
+        background-color: nth($signColor,$i);
+        z-index: 40;
+    }
+    .sign-#{$i}::before{
+        content:'';
+        display: block;
+        position: absolute;
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+        background-color: nth($signColor,$i);
+        top: 0;
+        left: 0;
+        transform: translateX($minus-half);
+        z-index: -1;
+    }
+    .sign-#{$i}::after{
+        content:'';
+        display: block;
+        position: absolute;
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+        background-color: nth($signColor,$i);
+        top: 0;
+        right: 0;
+        transform: translateX($half);
+        z-index: -1;
+    }
+}
+
+.container{
+    position: relative;
+    background: url("../images/content-bg.jpg") no-repeat;
+    width: $w-body;
+    height: $h-body;
+    margin: 0 auto;
+    .top{
+        padding: 45px 45px 0;
+        img{
+            width: 103px;
+            height: 38px;
+        }
+    }
+    .chathead{
+        position: relative;
+        width: $chathead;
+        height: $chathead;
+        border-radius: $half;
+        background-color: nth($Color ,1);
+        margin:0 auto;
+        img{
+            position: absolute;
+            left: $half;
+            top: $half;
+            transform: translate($minus-half,$minus-half);
+            width: 140px;
+            height: 129px;
+        }
+    }
+    .feedback{
+        text-align: center;
+        p{
+            font: 33.33px "Miscoft yahei",sans-serif;
+            color: nth($Color,1);
+            span{
+                color: nth($Color,3);
+            }
+        }
+    }
+    .other{
+        margin-top: 70px;
+        span{
+            display: block;
+            padding-left: 38px;
+            @include font($family:'Adobe',$color:#d5d5d5);
+            line-height: 39px;
+        }
+    }
+    .hall{
+        position: relative;
+        display: block;
+        height: 259px;
+        .sign-1{
+            right: 85px;
+        }
+        .sign-2{
+            left: 78px;
+            top: 65px;
+        }
+        .sign-3{
+            top: 192px;
+            right: 85px;
+        }
+        .sign-4{
+            left: 230px;
+            top: 129px;
+        }
+    }
+    .area{
+        position: relative;
+        text-align: center;
+        padding:55px 70px 0;
+        p{
+            margin: 0;
+            padding-bottom: 20px;
+            @include font($color:#d5d5d5);
+        }
+        textarea{
+            border: 2px solid white;
+            background-color: transparent;
+            width: 495px;
+            height: 71px;
+
+        }
+        .btn{
+            margin: 20px 26px;
+            display: inline-block;
+            width: 138px;
+            height: 48px;
+            background-color:nth($Color , 4);
+            box-shadow: 3px 3px 3px 0 #4e580e;
+            border-radius: 9px;
+            a{
+                display: block;
+                text-decoration: none;
+                @include font(25px, "Simsun",#384000 );
+                line-height:48px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,66 @@
+.container {
+  position: relative;
+  background: url("../images/result-bg.png") no-repeat;
+  width: 640px;
+  height: 1136px;
+  margin: 0 auto;
+}
+
+.container .top {
+  padding: 45px;
+}
+
+.container .top img {
+  width: 103px;
+  height: 38px;
+}
+
+.container .content {
+  position: relative;
+  background: url("../images/border.png") no-repeat center center;
+  width: 534px;
+  height: 846px;
+  margin: 23px auto 0;
+  padding-top: 80px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container .content .title {
+  font: bold 51.85px "Micsoft yahei",sans-serif;
+  color: #ff2121;
+  margin-bottom: 0;
+  -webkit-text-fill-color: #f6ff00;
+  -webkit-text-stroke: 3px black;
+}
+
+.container .content .msg {
+  display: inline-block;
+  padding: 0 55px;
+  font: 37.5px "Micsoft yahei",sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  line-height: 65px;
+}
+
+.container .content .msg span {
+  color: #36ff00;
+}
+
+.container .content .btn {
+  position: absolute;
+  right: 65px;
+  bottom: 110px;
+}
+
+.container .content .btn a {
+  display: block;
+  font-size: 0px;
+}
+
+.container .pic {
+  position: absolute;
+  z-index: 40;
+  bottom: 57px;
+  left: 55px;
+}

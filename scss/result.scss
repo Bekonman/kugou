@@ -1,0 +1,62 @@
+@import "./partials/_variral";
+
+.container{
+    position: relative;
+    background: url("../images/result-bg.png") no-repeat;
+    width: $w-body;
+    height: $h-body;
+    margin: 0 auto;
+    .top{
+        padding: 45px;
+        img{
+            width: 103px;
+            height: 38px;
+        }
+    }
+    .content{
+        position: relative;
+        background: url("../images/border.png") no-repeat center center;
+        width: 534px;
+        height: 846px;
+        margin: 23px auto 0;
+        padding-top: 80px;
+        box-sizing: border-box;
+        text-align: center;
+        .title{
+            font:bold 51.85px "Micsoft yahei",sans-serif;
+            color: #ff2121;
+            margin-bottom: 0;
+            // 给文字填充颜色和描边
+            -webkit-text-fill-color: #f6ff00;
+            -webkit-text-stroke: 3px black;
+        }   
+        .msg{
+            display: inline-block;
+            padding: 0 55px;
+            font: 37.5px "Micsoft yahei",sans-serif;
+            color: #ffffff;
+            text-shadow: 3px 3px 5px rgba($color: #000000, $alpha: .5);
+            line-height: 65px;
+            span{
+                color: #36ff00;
+            }
+        }
+        .btn{
+            position: absolute;
+            right: 65px;
+            bottom: 110px;
+            a{
+                display: block;
+                font-size: $fz-0;
+            }
+        }
+    }
+    .pic{
+        position: absolute;
+        z-index: 40;
+        bottom: 57px;
+        left: 55px;
+       
+    }
+    
+}
